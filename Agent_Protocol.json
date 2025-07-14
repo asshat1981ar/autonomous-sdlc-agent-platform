@@ -1,0 +1,12 @@
+
+{
+    "protocol_version": "1.0",
+    "message_format": {
+        "header": {"agent_id": "uuid", "timestamp": "ISO8601"},
+        "payload": {"task": "string", "parameters": "object"}
+    },
+    "error_handling": {
+        "retry_policy": {"max_retries": 3, "interval_sec": 10},
+        "fallback_strategy": "alternative_agent_routing"
+    }
+}
