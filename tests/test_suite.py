@@ -1,12 +1,15 @@
 import unittest
 import asyncio
-from contextlib import contextmanager
+import logging
+from contextlib import contextmanager, asynccontextmanager
+
+logger = logging.getLogger(__name__)
 
 class TestSuite:
     """A test suite for managing and running test cases with result tracking."""
 
     def __init__(self):
-    """  Init   with enhanced functionality."""
+        """Init with enhanced functionality."""
 
         self.tests_run = 0
         self.tests_passed = 0
@@ -46,7 +49,7 @@ class TestSuite:
         finally:
             self.tests_run += 1
 
-    @contextmanager
+    @asynccontextmanager
     async def async_test_case(self, name):
         """
         Async context manager for individual test cases.

@@ -19,7 +19,8 @@ class TestA2AFramework(unittest.TestCase):
 
     def setUp(self):
         """Set up test fixtures, if any."""
-        self.loop = asyncio.get_event_loop()
+        self.loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(self.loop)
 
         # Agent Capabilities
         self.coding_capabilities = [
