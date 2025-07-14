@@ -1,0 +1,9 @@
+
+flowchart LR
+    Start --> Prompt
+    Prompt --> Generation
+    Generation --> Validation
+    Validation -->|Pass| Deployment
+    Validation -->|Fail| Prompt
+    Deployment --> Monitor
+    Monitor -->|Trigger| Prompt
