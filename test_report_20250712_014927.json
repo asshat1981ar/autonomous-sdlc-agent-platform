@@ -1,0 +1,195 @@
+{
+  "summary": {
+    "total_tests": 18,
+    "passed_tests": 7,
+    "failed_tests": 11,
+    "success_rate": 38.88888888888889,
+    "total_duration": 96.25643253326416,
+    "average_test_duration": 5.347446097267999
+  },
+  "results": [
+    {
+      "test_name": "File Structure Check",
+      "success": true,
+      "details": "All 11 required files present",
+      "duration": 0.03476548194885254,
+      "timestamp": "2025-07-12T01:47:51.502123"
+    },
+    {
+      "test_name": "Python Imports",
+      "success": false,
+      "details": "Failed imports: src.services.bridges.bridge_manager.bridge_manager: No module named 'aiohttp'; src.services.bridges.github_codex_bridge.github_codex_bridge: No module named 'aiohttp'",
+      "duration": 0.8759238719940186,
+      "timestamp": "2025-07-12T01:47:52.379057"
+    },
+    {
+      "test_name": "CSS Syntax Validation",
+      "success": true,
+      "details": "CSS syntax valid, 43 rules found",
+      "duration": 0.005146026611328125,
+      "timestamp": "2025-07-12T01:47:52.384236"
+    },
+    {
+      "test_name": "TSX Syntax Validation",
+      "success": true,
+      "details": "All 5 TSX files have valid syntax",
+      "duration": 0.019369125366210938,
+      "timestamp": "2025-07-12T01:47:52.403639"
+    },
+    {
+      "test_name": "MCP Bridge Initialization",
+      "success": true,
+      "details": "MCP bridge initialized with 5 servers",
+      "duration": 0.001035451889038086,
+      "timestamp": "2025-07-12T01:47:52.404732"
+    },
+    {
+      "test_name": "MCP Bridge Health Check",
+      "success": true,
+      "details": "Health check successful: 2/5 servers",
+      "duration": 94.012540102005,
+      "timestamp": "2025-07-12T01:49:26.417327"
+    },
+    {
+      "test_name": "MCP Server Communication",
+      "success": false,
+      "details": "Research failed: Connection lost",
+      "duration": 0.04926133155822754,
+      "timestamp": "2025-07-12T01:49:26.466644"
+    },
+    {
+      "test_name": "Bridge Manager Initialization",
+      "success": false,
+      "details": "Bridge manager initialization failed: No module named 'aiohttp'",
+      "duration": 0.06413459777832031,
+      "timestamp": "2025-07-12T01:49:26.530863"
+    },
+    {
+      "test_name": "Bridge Manager Health Check",
+      "success": false,
+      "details": "Bridge status check failed: No module named 'aiohttp'",
+      "duration": 0.0593256950378418,
+      "timestamp": "2025-07-12T01:49:26.590226"
+    },
+    {
+      "test_name": "Bridge Manager Task Routing",
+      "success": false,
+      "details": "Task routing failed: No module named 'aiohttp'",
+      "duration": 0.06928133964538574,
+      "timestamp": "2025-07-12T01:49:26.659539"
+    },
+    {
+      "test_name": "A2A Coordinator Initialization",
+      "success": false,
+      "details": "A2A coordinator initialization failed: No module named 'aiohttp'",
+      "duration": 0.09303712844848633,
+      "timestamp": "2025-07-12T01:49:26.752620"
+    },
+    {
+      "test_name": "A2A Message Creation",
+      "success": false,
+      "details": "Message creation failed: No module named 'aiohttp'",
+      "duration": 0.07659792900085449,
+      "timestamp": "2025-07-12T01:49:26.829257"
+    },
+    {
+      "test_name": "A2A Message Routing",
+      "success": false,
+      "details": "Message routing failed: No module named 'aiohttp'",
+      "duration": 0.07202720642089844,
+      "timestamp": "2025-07-12T01:49:26.901315"
+    },
+    {
+      "test_name": "Orchestrator Initialization",
+      "success": true,
+      "details": "Orchestrator initialized with 4 providers",
+      "duration": 0.03449678421020508,
+      "timestamp": "2025-07-12T01:49:26.935845"
+    },
+    {
+      "test_name": "Orchestrator Collaboration",
+      "success": true,
+      "details": "Collaboration successful: Conversational Code Mesh with 2 agents",
+      "duration": 0.6091868877410889,
+      "timestamp": "2025-07-12T01:49:27.545055"
+    },
+    {
+      "test_name": "Full Workflow Integration",
+      "success": false,
+      "details": "Full workflow integration failed: No module named 'aiohttp'",
+      "duration": 0.05895352363586426,
+      "timestamp": "2025-07-12T01:49:27.604036"
+    },
+    {
+      "test_name": "Response Times",
+      "success": false,
+      "details": "Performance test failed: No module named 'aiohttp'",
+      "duration": 0.05262303352355957,
+      "timestamp": "2025-07-12T01:49:27.656690"
+    },
+    {
+      "test_name": "Concurrent Operations",
+      "success": false,
+      "details": "Concurrent operations test failed: No module named 'aiohttp'",
+      "duration": 0.06632423400878906,
+      "timestamp": "2025-07-12T01:49:27.723141"
+    }
+  ],
+  "failed_tests": [
+    {
+      "test_name": "Python Imports",
+      "details": "Failed imports: src.services.bridges.bridge_manager.bridge_manager: No module named 'aiohttp'; src.services.bridges.github_codex_bridge.github_codex_bridge: No module named 'aiohttp'",
+      "duration": 0.8759238719940186
+    },
+    {
+      "test_name": "MCP Server Communication",
+      "details": "Research failed: Connection lost",
+      "duration": 0.04926133155822754
+    },
+    {
+      "test_name": "Bridge Manager Initialization",
+      "details": "Bridge manager initialization failed: No module named 'aiohttp'",
+      "duration": 0.06413459777832031
+    },
+    {
+      "test_name": "Bridge Manager Health Check",
+      "details": "Bridge status check failed: No module named 'aiohttp'",
+      "duration": 0.0593256950378418
+    },
+    {
+      "test_name": "Bridge Manager Task Routing",
+      "details": "Task routing failed: No module named 'aiohttp'",
+      "duration": 0.06928133964538574
+    },
+    {
+      "test_name": "A2A Coordinator Initialization",
+      "details": "A2A coordinator initialization failed: No module named 'aiohttp'",
+      "duration": 0.09303712844848633
+    },
+    {
+      "test_name": "A2A Message Creation",
+      "details": "Message creation failed: No module named 'aiohttp'",
+      "duration": 0.07659792900085449
+    },
+    {
+      "test_name": "A2A Message Routing",
+      "details": "Message routing failed: No module named 'aiohttp'",
+      "duration": 0.07202720642089844
+    },
+    {
+      "test_name": "Full Workflow Integration",
+      "details": "Full workflow integration failed: No module named 'aiohttp'",
+      "duration": 0.05895352363586426
+    },
+    {
+      "test_name": "Response Times",
+      "details": "Performance test failed: No module named 'aiohttp'",
+      "duration": 0.05262303352355957
+    },
+    {
+      "test_name": "Concurrent Operations",
+      "details": "Concurrent operations test failed: No module named 'aiohttp'",
+      "duration": 0.06632423400878906
+    }
+  ]
+}
