@@ -1,0 +1,7 @@
+
+graph TD
+    User --> Orchestrator
+    Orchestrator -->|Task Routing| AgentRegistry
+    AgentRegistry -->|Agent Lookup| Agents
+    Agents -->|Perform Tasks| KnowledgeGraph
+    KnowledgeGraph -->|Update Context| Orchestrator
