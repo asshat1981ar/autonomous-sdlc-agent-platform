@@ -1,0 +1,12 @@
+
+sequenceDiagram
+    participant User
+    participant Orchestrator
+    participant AgentRegistry
+    participant Agent
+    User->>Orchestrator: Task Request
+    Orchestrator->>AgentRegistry: Find Agent
+    AgentRegistry->>Orchestrator: Agent List
+    Orchestrator->>Agent: Assign Task
+    Agent->>Orchestrator: Task Result
+    Orchestrator->>User: Result Response
