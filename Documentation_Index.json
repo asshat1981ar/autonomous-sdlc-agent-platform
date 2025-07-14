@@ -1,0 +1,18 @@
+
+{
+    "documentation": [
+        {"type": "markdown", "file": "System_Architecture.md"},
+        {"type": "json_protocol", "file": "Agent_Protocol.json"}
+    ],
+    "code_snippets": [
+        {"language": "python", "file": "Knowledge_Graph_Snippet.py"},
+        {"language": "typescript", "file": "Orchestrator_Snippet.ts"}
+    ],
+    "diagrams": [
+        {"format": "mermaid", "files": [
+            "Architecture_Diagram.mmd",
+            "Agent_Routing_Sequence.mmd",
+            "SelfPrompting_Loop.mmd"
+        ]}
+    ]
+}
