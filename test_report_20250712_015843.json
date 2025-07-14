@@ -1,0 +1,160 @@
+{
+  "summary": {
+    "total_tests": 18,
+    "passed_tests": 14,
+    "failed_tests": 4,
+    "success_rate": 77.77777777777779,
+    "total_duration": 114.8566243648529,
+    "average_test_duration": 6.3801719480090675
+  },
+  "results": [
+    {
+      "test_name": "File Structure Check",
+      "success": true,
+      "details": "All 11 required files present",
+      "duration": 0.041506052017211914,
+      "timestamp": "2025-07-12T01:56:48.307552"
+    },
+    {
+      "test_name": "Python Imports",
+      "success": true,
+      "details": "All 3 imports successful",
+      "duration": 0.9815883636474609,
+      "timestamp": "2025-07-12T01:56:49.291895"
+    },
+    {
+      "test_name": "CSS Syntax Validation",
+      "success": true,
+      "details": "CSS syntax valid, 43 rules found",
+      "duration": 0.004729509353637695,
+      "timestamp": "2025-07-12T01:56:49.296670"
+    },
+    {
+      "test_name": "TSX Syntax Validation",
+      "success": true,
+      "details": "All 5 TSX files have valid syntax",
+      "duration": 0.034076690673828125,
+      "timestamp": "2025-07-12T01:56:49.330813"
+    },
+    {
+      "test_name": "MCP Bridge Initialization",
+      "success": true,
+      "details": "MCP bridge initialized with 5 servers",
+      "duration": 0.0010056495666503906,
+      "timestamp": "2025-07-12T01:56:49.331866"
+    },
+    {
+      "test_name": "MCP Bridge Health Check",
+      "success": true,
+      "details": "Health check successful: 2/5 servers",
+      "duration": 95.93042802810669,
+      "timestamp": "2025-07-12T01:58:25.263300"
+    },
+    {
+      "test_name": "MCP Server Communication",
+      "success": false,
+      "details": "Research failed: Connection lost",
+      "duration": 0.06262850761413574,
+      "timestamp": "2025-07-12T01:58:25.328882"
+    },
+    {
+      "test_name": "Bridge Manager Initialization",
+      "success": true,
+      "details": "Bridge manager initialized with 5 bridges",
+      "duration": 0.003269672393798828,
+      "timestamp": "2025-07-12T01:58:25.335141"
+    },
+    {
+      "test_name": "Bridge Manager Health Check",
+      "success": true,
+      "details": "Bridge status: 2/5 healthy",
+      "duration": 12.156780004501343,
+      "timestamp": "2025-07-12T01:58:37.491980"
+    },
+    {
+      "test_name": "Bridge Manager Task Routing",
+      "success": true,
+      "details": "Task routing successful: mcp_server for research, github_codex for code gen",
+      "duration": 0.0008497238159179688,
+      "timestamp": "2025-07-12T01:58:37.493343"
+    },
+    {
+      "test_name": "A2A Coordinator Initialization",
+      "success": true,
+      "details": "A2A coordinator initialized with 6 agents",
+      "duration": 0.11576604843139648,
+      "timestamp": "2025-07-12T01:58:37.609276"
+    },
+    {
+      "test_name": "A2A Message Creation",
+      "success": true,
+      "details": "Message created successfully with ID: a2a_1752303517609_0",
+      "duration": 0.0017828941345214844,
+      "timestamp": "2025-07-12T01:58:37.611092"
+    },
+    {
+      "test_name": "A2A Message Routing",
+      "success": false,
+      "details": "Research routing failed: Connection lost",
+      "duration": 0.0482640266418457,
+      "timestamp": "2025-07-12T01:58:37.659392"
+    },
+    {
+      "test_name": "Orchestrator Initialization",
+      "success": true,
+      "details": "Orchestrator initialized with 4 providers",
+      "duration": 0.0004801750183105469,
+      "timestamp": "2025-07-12T01:58:37.660375"
+    },
+    {
+      "test_name": "Orchestrator Collaboration",
+      "success": true,
+      "details": "Collaboration successful: Conversational Code Mesh with 2 agents",
+      "duration": 0.6091299057006836,
+      "timestamp": "2025-07-12T01:58:38.269539"
+    },
+    {
+      "test_name": "Full Workflow Integration",
+      "success": false,
+      "details": "Only 1 phases completed, expected at least 3",
+      "duration": 4.618303060531616,
+      "timestamp": "2025-07-12T01:58:42.888116"
+    },
+    {
+      "test_name": "Response Times",
+      "success": true,
+      "details": "Performance acceptable: creation 0.000s, routing 0.035s",
+      "duration": 0.03594183921813965,
+      "timestamp": "2025-07-12T01:58:42.924180"
+    },
+    {
+      "test_name": "Concurrent Operations",
+      "success": false,
+      "details": "Only 0/5 concurrent operations succeeded",
+      "duration": 0.1965649127960205,
+      "timestamp": "2025-07-12T01:58:43.120789"
+    }
+  ],
+  "failed_tests": [
+    {
+      "test_name": "MCP Server Communication",
+      "details": "Research failed: Connection lost",
+      "duration": 0.06262850761413574
+    },
+    {
+      "test_name": "A2A Message Routing",
+      "details": "Research routing failed: Connection lost",
+      "duration": 0.0482640266418457
+    },
+    {
+      "test_name": "Full Workflow Integration",
+      "details": "Only 1 phases completed, expected at least 3",
+      "duration": 4.618303060531616
+    },
+    {
+      "test_name": "Concurrent Operations",
+      "details": "Only 0/5 concurrent operations succeeded",
+      "duration": 0.1965649127960205
+    }
+  ]
+}
