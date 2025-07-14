@@ -6,13 +6,16 @@ import asyncio
 import json
 import sys
 import os
+import logging
 
 # Add src to path for imports
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
 from services.ai_providers_simple import orchestrator
 
-async def test_orchestrator():
+logger = logging.getLogger(__name__)
+
+async def _async_test_orchestrator():
     """Test the SDLC orchestrator with different collaboration paradigms"""
 
     logger.info("SDLC Orchestrator Test Suite")
@@ -86,7 +89,11 @@ async def test_orchestrator():
     logger.info(f"Available Providers: {list(orchestrator.providers.keys())}")
     logger.info(f"Bridge Enhanced: {orchestrator.bridge_initialized}")
 
+def test_orchestrator():
+    asyncio.run(_async_test_orchestrator())
+
+
 if __name__ == "__main__":
     logger.info("Starting SDLC Orchestrator Test...")
-    asyncio.run(test_orchestrator())
+    asyncio.run(_async_test_orchestrator())
     logger.info("\nTest Complete!")

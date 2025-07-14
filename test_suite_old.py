@@ -8,6 +8,7 @@ import sys
 import os
 import time
 import json
+import logging
 from typing import Dict, List, Any
 from contextlib import asynccontextmanager
 
@@ -15,6 +16,8 @@ from contextlib import asynccontextmanager
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+logger = logging.getLogger(__name__)
 
 class TestResult:
     """TestResult class for steampunk operations."""
@@ -67,7 +70,7 @@ class TestSuite:
                 if not result.passed:
                     logger.info(f"- {result.name}: {result.error}")
 
-async def test_orchestrator_functionality():
+async def run_orchestrator_functionality():
     """Test core orchestrator functionality"""
     suite = TestSuite()
 
@@ -119,7 +122,7 @@ async def test_orchestrator_functionality():
 
     return suite
 
-async def test_database_functionality():
+async def run_database_functionality():
     """Test database operations"""
     suite = TestSuite()
 
@@ -146,7 +149,7 @@ async def test_database_functionality():
 
     return suite
 
-async def test_api_endpoints():
+async def run_api_endpoints():
     """Test API endpoint functionality"""
     suite = TestSuite()
 
@@ -162,7 +165,7 @@ async def test_api_endpoints():
 
     return suite
 
-async def test_frontend_structure():
+async def run_frontend_structure():
     """Test frontend file structure"""
     suite = TestSuite()
 
@@ -214,10 +217,10 @@ async def main():
     logger.info("="*60)
 
     test_suites = [
-        await test_orchestrator_functionality(),
-        await test_database_functionality(),
-        await test_api_endpoints(),
-        test_frontend_structure(),
+        await run_orchestrator_functionality(),
+        await run_database_functionality(),
+        await run_api_endpoints(),
+        run_frontend_structure(),
         await run_performance_tests()
     ]
 
