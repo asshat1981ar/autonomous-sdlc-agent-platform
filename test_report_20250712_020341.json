@@ -1,0 +1,139 @@
+{
+  "summary": {
+    "total_tests": 18,
+    "passed_tests": 18,
+    "failed_tests": 0,
+    "success_rate": 100.0,
+    "total_duration": 7.710116624832153,
+    "average_test_duration": 0.42812016275193954
+  },
+  "results": [
+    {
+      "test_name": "File Structure Check",
+      "success": true,
+      "details": "All 11 required files present",
+      "duration": 0.028207063674926758,
+      "timestamp": "2025-07-12T02:03:33.948225"
+    },
+    {
+      "test_name": "Python Imports",
+      "success": true,
+      "details": "All 3 imports successful",
+      "duration": 0.9600358009338379,
+      "timestamp": "2025-07-12T02:03:34.908333"
+    },
+    {
+      "test_name": "CSS Syntax Validation",
+      "success": true,
+      "details": "CSS syntax valid, 43 rules found",
+      "duration": 0.017431020736694336,
+      "timestamp": "2025-07-12T02:03:34.925801"
+    },
+    {
+      "test_name": "TSX Syntax Validation",
+      "success": true,
+      "details": "All 5 TSX files have valid syntax",
+      "duration": 0.02459859848022461,
+      "timestamp": "2025-07-12T02:03:34.950448"
+    },
+    {
+      "test_name": "MCP Bridge Initialization",
+      "success": true,
+      "details": "MCP bridge initialized with 5 servers",
+      "duration": 0.0011687278747558594,
+      "timestamp": "2025-07-12T02:03:34.951651"
+    },
+    {
+      "test_name": "MCP Bridge Health Check",
+      "success": true,
+      "details": "Health check successful: 5/5 servers",
+      "duration": 0.2668614387512207,
+      "timestamp": "2025-07-12T02:03:35.218549"
+    },
+    {
+      "test_name": "MCP Server Communication",
+      "success": true,
+      "details": "MCP server communication successful",
+      "duration": 0.08990955352783203,
+      "timestamp": "2025-07-12T02:03:35.308510"
+    },
+    {
+      "test_name": "Bridge Manager Initialization",
+      "success": true,
+      "details": "Bridge manager initialized with 5 bridges",
+      "duration": 5.435943603515625e-05,
+      "timestamp": "2025-07-12T02:03:35.308615"
+    },
+    {
+      "test_name": "Bridge Manager Health Check",
+      "success": true,
+      "details": "Bridge status: 2/5 healthy",
+      "duration": 4.448171377182007,
+      "timestamp": "2025-07-12T02:03:39.756829"
+    },
+    {
+      "test_name": "Bridge Manager Task Routing",
+      "success": true,
+      "details": "Task routing successful: mcp_server for research, github_codex for code gen",
+      "duration": 0.0008223056793212891,
+      "timestamp": "2025-07-12T02:03:39.757702"
+    },
+    {
+      "test_name": "A2A Coordinator Initialization",
+      "success": true,
+      "details": "A2A coordinator initialized with 6 agents",
+      "duration": 0.11906313896179199,
+      "timestamp": "2025-07-12T02:03:39.879950"
+    },
+    {
+      "test_name": "A2A Message Creation",
+      "success": true,
+      "details": "Message created successfully with ID: a2a_1752303819880_0",
+      "duration": 0.00017571449279785156,
+      "timestamp": "2025-07-12T02:03:39.880157"
+    },
+    {
+      "test_name": "A2A Message Routing",
+      "success": true,
+      "details": "Message routing successful for both agent and MCP targets",
+      "duration": 0.14896059036254883,
+      "timestamp": "2025-07-12T02:03:40.029158"
+    },
+    {
+      "test_name": "Orchestrator Initialization",
+      "success": true,
+      "details": "Orchestrator initialized with 4 providers",
+      "duration": 8.153915405273438e-05,
+      "timestamp": "2025-07-12T02:03:40.029285"
+    },
+    {
+      "test_name": "Orchestrator Collaboration",
+      "success": true,
+      "details": "Collaboration successful: Conversational Code Mesh with 2 agents",
+      "duration": 0.6313989162445068,
+      "timestamp": "2025-07-12T02:03:40.660701"
+    },
+    {
+      "test_name": "Full Workflow Integration",
+      "success": true,
+      "details": "Full workflow integration successful: 3 phases completed",
+      "duration": 0.3292877674102783,
+      "timestamp": "2025-07-12T02:03:40.990017"
+    },
+    {
+      "test_name": "Response Times",
+      "success": true,
+      "details": "Performance acceptable: creation 0.000s, routing 0.100s",
+      "duration": 0.10025787353515625,
+      "timestamp": "2025-07-12T02:03:41.090328"
+    },
+    {
+      "test_name": "Concurrent Operations",
+      "success": true,
+      "details": "Concurrent operations successful: 5/5 in 0.539s",
+      "duration": 0.5396771430969238,
+      "timestamp": "2025-07-12T02:03:41.630049"
+    }
+  ],
+  "failed_tests": []
+}
