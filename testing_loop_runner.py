@@ -6,7 +6,6 @@ from typing import List, Dict, Any
 
 class TestingLoopRunner:
     """TestingLoopRunner class for steampunk operations."""
-    """  Init   with enhanced functionality."""
     def __init__(self, orchestrator, agents: List[str], project_root: str = "."):
         self.orchestrator = orchestrator
         self.agents = agents

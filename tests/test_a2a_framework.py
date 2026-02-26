@@ -52,8 +52,6 @@ class TestA2AFramework(unittest.TestCase):
 
     def test_send_and_receive_message(self):
         """Test that an agent can send and receive a message."""
-
-        """Run Test with enhanced functionality."""
         async def run_test():
             # Start agents
             await self.coder_agent.start()
