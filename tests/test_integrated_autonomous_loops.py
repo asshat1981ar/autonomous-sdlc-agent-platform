@@ -8,8 +8,8 @@ from integrated_autonomous_loops import IntegratedAutonomousLoops
 from refactored_orchestrator import EnhancedOrchestrator
 
 class TestIntegratedAutonomousLoops(unittest.IsolatedAsyncioTestCase):
-    """TestIntegratedAutonomousLoops class for steampunk operations."""
-    """Test Run All Loops Basic with enhanced functionality."""
+    """Tests for IntegratedAutonomousLoops."""
+
     async def test_run_all_loops_basic(self):
         orchestrator = EnhancedOrchestrator()
         agents = ['gemini', 'claude', 'openai']
