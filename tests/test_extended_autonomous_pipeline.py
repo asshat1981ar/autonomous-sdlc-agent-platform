@@ -30,6 +30,16 @@ class TestExtendedAutonomousPipeline(unittest.IsolatedAsyncioTestCase):
         ]
         self.assertEqual([r.name for r in results], expected_names)
 
+    async def test_history_cleared_between_runs(self):
+        orchestrator = EnhancedOrchestrator()
+        agents = ['gemini', 'claude']
+        pipeline = ExtendedAutonomousPipeline(orchestrator, agents)
+        first_results = await pipeline.run_pipeline('First requirements')
+        self.assertEqual(len(first_results), 8)
+        results = await pipeline.run_pipeline('Second requirements')
+        self.assertEqual(len(results), 8)
+        self.assertEqual(len(pipeline.history), 8)
+
 
 if __name__ == '__main__':
     unittest.main()

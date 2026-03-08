@@ -113,6 +113,7 @@ class ExtendedAutonomousPipeline:
         return summary
 
     async def run_pipeline(self, raw_input: str) -> List[LoopRecord]:
+        self.history.clear()  # Clear history for new pipeline run
         backlog = await self.requirement_extraction(raw_input)
         design = await self.architecture_synthesis(backlog)
         code = await self.code_generation(design)
