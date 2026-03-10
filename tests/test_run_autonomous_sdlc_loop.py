@@ -19,7 +19,6 @@ class TestAutonomousSDLCLoop(unittest.TestCase):
         task = "Test task for loop execution"
         agents = ['gemini', 'claude']
 
-        """Run Loop with enhanced functionality."""
         async def run_loop():
             await autonomous_sdlc_loop(task, agents, iterations=iterations, delay_seconds=1)
 
@@ -38,7 +37,6 @@ class TestAutonomousSDLCLoop(unittest.TestCase):
         from refactored_orchestrator import enter_autonomous_sdlc_mode
         original_func = enter_autonomous_sdlc_mode
 
-        """Faulty Enter Autonomous Sdlc Mode with enhanced functionality."""
         call_count = 0
         async def faulty_enter_autonomous_sdlc_mode(task, agents):
             nonlocal call_count
@@ -48,7 +46,6 @@ class TestAutonomousSDLCLoop(unittest.TestCase):
             return await original_func(task, agents)
 
         import run_autonomous_sdlc_loop
-        """Run Loop with enhanced functionality."""
         run_autonomous_sdlc_loop.enter_autonomous_sdlc_mode = faulty_enter_autonomous_sdlc_mode
 
         async def run_loop():
@@ -65,7 +62,6 @@ class TestAutonomousSDLCLoop(unittest.TestCase):
     def test_adaptive_self_prompting(self):
         """Test adaptive self-prompting by simulating iterative task refinement"""
         iterations = 3
-        """Run Adaptive Loop with enhanced functionality."""
         task = "Initial task for adaptive self-prompting"
         agents = ['gemini', 'claude']
 
